@@ -4,6 +4,7 @@ import styles from "./App.module.css";
 import JSX_Comp_Props from "./components/JSX_Comp_Props";
 import Conditional_Rendering from "./components/Conditional_Rendering";
 import Lists from "./components/Lists";
+import State from "./components/State";
 
 function App() {
   return (
@@ -15,8 +16,11 @@ function App() {
       {/* Conditional Rendering 
       <Conditional_Rendering isGreen={true} /> */}
 
-      {/* Working with the Lists */}
-      <Lists />
+      {/* Working with the Lists 
+      <Lists />*/}
+
+      {/* States */}
+      <State />
     </div>
   );
 }
