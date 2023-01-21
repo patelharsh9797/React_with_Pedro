@@ -8,6 +8,7 @@ import JSX_Comp_Props from "./components/JSX_Comp_Props";
 import Conditional_Rendering from "./components/Conditional_Rendering";
 import Lists from "./components/Lists";
 import State from "./components/State";
+import LifeCycle from "./components/LifeCycle";
 
 function App() {
   return (
@@ -25,8 +26,13 @@ function App() {
       {/* States
       <State /> */}
 
-      {/* CRUD in react */}
-      <CRUD />
+      {/* CRUD in react
+      <CRUD /> */}
+
+      {/* <Skills skills={["HTML", "CSS", "JavaScript"]} /> */}
+
+      {/* Component LifeCycle */}
+      <LifeCycle />
     </div>
   );
 }
@@ -43,5 +49,13 @@ function App() {
 //     </div>
 //   );
 // };
+
+// const Skills = (props) => (
+//   <ul>
+//     {props.skills.map((skill) => (
+//       <li>{skill}</li>
+//     ))}
+//   </ul>
+// );
 
 export default App;
