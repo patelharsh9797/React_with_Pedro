@@ -38,7 +38,8 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+button,
+.btn {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.5em 1em;
@@ -48,10 +49,11 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-  margin-inline: .25rem;
+  margin: .25rem;
 }
 
-button:hover {
+button:hover,
+.btn:hover {
   border-color: #646cff;
 }
 
@@ -110,8 +112,31 @@ input:focus-within {
 
 hr {
   border: 1px solid #535bf2;
+}
 
-  /* opacity: .75; */
+.showExcuse {
+  padding-block: 2rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+/*  */
+/* UTILs */
+/*  */
+.gradText {
+  font-weight: bold;
+  display: inline-block;
+  background-image: linear-gradient(-90deg, cyan, #5675ff, #b334b6, #f60682);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (prefers-color-scheme: light) {

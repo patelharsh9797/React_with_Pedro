@@ -1,14 +1,16 @@
 import styles from "./App.module.css";
 
 // TODO pages
-import CRUD from "./pages/CRUD";
+// import CRUD from "./pages/CRUD";
+// import ReactRouterDOM from "./pages/ReactRouterDOM";
 
 // TODO Components
-import JSX_Comp_Props from "./components/JSX_Comp_Props";
-import Conditional_Rendering from "./components/Conditional_Rendering";
-import Lists from "./components/Lists";
-import State from "./components/State";
-import LifeCycle from "./components/LifeCycle";
+// import JSX_Comp_Props from "./components/JSX_Comp_Props";
+// import Conditional_Rendering from "./components/Conditional_Rendering";
+// import Lists from "./components/Lists";
+// import State from "./components/State";
+// import LifeCycle from "./components/LifeCycle";
+import FetchApi from "./components/FetchApi";
 
 function App() {
   return (
@@ -31,8 +33,11 @@ function App() {
 
       {/* <Skills skills={["HTML", "CSS", "JavaScript"]} /> */}
 
-      {/* Component LifeCycle */}
-      <LifeCycle />
+      {/* Component LifeCycle & useEffect
+      <LifeCycle /> */}
+
+      {/* Fetching Api */}
+      <FetchApi />
     </div>
   );
 }
