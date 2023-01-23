@@ -2,7 +2,7 @@ import styles from "./App.module.css";
 
 // TODO pages
 // import CRUD from "./pages/CRUD";
-// import ReactRouterDOM from "./pages/ReactRouterDOM";
+import ReactRouterDOM from "./pages/ReactRouterDOM";
 
 // TODO Components
 // import JSX_Comp_Props from "./components/JSX_Comp_Props";
@@ -36,8 +36,11 @@ function App() {
       {/* Component LifeCycle & useEffect
       <LifeCycle /> */}
 
-      {/* Fetching Api */}
-      <FetchApi />
+      {/* Fetching Api 
+      <FetchApi /> */}
+
+      {/* React Router Dom */}
+      <ReactRouterDOM />
     </div>
   );
 }
