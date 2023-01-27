@@ -3,6 +3,8 @@ import styles from "./App.module.css";
 // TODO pages
 // import CRUD from "./pages/CRUD";
 import ReactRouterDOM from "./pages/ReactRouterDOM";
+import PropsDrilling from "./pages/PropsDrilling";
+import ContextApi from "./pages/ContextApi";
 
 // TODO Components
 // import JSX_Comp_Props from "./components/JSX_Comp_Props";
@@ -10,7 +12,7 @@ import ReactRouterDOM from "./pages/ReactRouterDOM";
 // import Lists from "./components/Lists";
 // import State from "./components/State";
 // import LifeCycle from "./components/LifeCycle";
-import FetchApi from "./components/FetchApi";
+// import FetchApi from "./components/FetchApi";
 
 function App() {
   return (
@@ -39,8 +41,12 @@ function App() {
       {/* Fetching Api 
       <FetchApi /> */}
 
-      {/* React Router Dom */}
-      <ReactRouterDOM />
+      {/* React Router Dom 
+      <ReactRouterDOM />*/}
+
+      {/* Context Api */}
+      {/* <PropsDrilling /> */}
+      <ContextApi />
     </div>
   );
 }
