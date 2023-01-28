@@ -2,9 +2,10 @@ import styles from "./App.module.css";
 
 // TODO pages
 // import CRUD from "./pages/CRUD";
-import ReactRouterDOM from "./pages/ReactRouterDOM";
-import PropsDrilling from "./pages/PropsDrilling";
-import ContextApi from "./pages/ContextApi";
+// import ReactRouterDOM from "./pages/ReactRouterDOM";
+// import PropsDrilling from "./pages/PropsDrilling";
+// import ContextApi from "./pages/ContextApi";
+import ReactQuery from "./pages/ReactQuery";
 
 // TODO Components
 // import JSX_Comp_Props from "./components/JSX_Comp_Props";
@@ -45,8 +46,11 @@ function App() {
       <ReactRouterDOM />*/}
 
       {/* Context Api */}
-      {/* <PropsDrilling /> */}
-      <ContextApi />
+      {/* <PropsDrilling /> 
+      <ContextApi /> */}
+
+      {/* React Query */}
+      <ReactQuery />
     </div>
   );
 }
