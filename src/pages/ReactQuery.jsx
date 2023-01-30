@@ -41,8 +41,10 @@ const ReactQuery = () => {
 const Home = () => {
   const { data, isInitialLoading, isError, refetch, isRefetching } = useQuery(
     ["CAT"],
-    () => {
-      return Axios.get("https://catfact.ninja/fact").then((res) => res.data);
+    async () => {
+      return await Axios.get("https://catfact.ninja/fact")
+        .then((res) => res.data)
+        .catch((error) => error.response.data);
     }
   );
 
@@ -54,7 +56,7 @@ const Home = () => {
     <>
       <h1>Home</h1>
       {!(isInitialLoading || isRefetching) ? (
-        <h2>{data?.fact}</h2>
+        <h2>{data?.fact || data?.message}</h2>
       ) : (
         <h2>Loading...</h2>
       )}
