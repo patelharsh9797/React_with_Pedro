@@ -39,19 +39,25 @@ const ReactQuery = () => {
 
 // TODO Custom Components
 const Home = () => {
-  const { data, isLoading, isError, refetch } = useQuery(["CAT"], () => {
-    return Axios.get("https://catfact.ninja/fact").then((res) => res.data);
-  });
+  const { data, isInitialLoading, isError, refetch, isRefetching } = useQuery(
+    ["CAT"],
+    () => {
+      return Axios.get("https://catfact.ninja/fact").then((res) => res.data);
+    }
+  );
 
-  if (isLoading) return <h1>Loading</h1>;
+  // if (isLoading) return <h1>Loading</h1>;
 
-  if (isError) return <h1>Error</h1>;
+  if (isError) return <h1>Error while Fetching DATA</h1>;
 
   return (
     <>
-      <h1>
-        Home <p>{data?.fact}</p>{" "}
-      </h1>
+      <h1>Home</h1>
+      {!(isInitialLoading || isRefetching) ? (
+        <h2>{data?.fact}</h2>
+      ) : (
+        <h2>Loading...</h2>
+      )}
       <button onClick={refetch}>Update</button>
     </>
   );
