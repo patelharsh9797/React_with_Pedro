@@ -5,7 +5,8 @@ import styles from "./App.module.css";
 // import ReactRouterDOM from "./pages/ReactRouterDOM";
 // import PropsDrilling from "./pages/PropsDrilling";
 // import ContextApi from "./pages/ContextApi";
-import ReactQuery from "./pages/ReactQuery";
+// import ReactQuery from "./pages/ReactQuery";
+import ReactForm from "./pages/ReactForm";
 
 // TODO Components
 // import JSX_Comp_Props from "./components/JSX_Comp_Props";
@@ -49,8 +50,11 @@ function App() {
       {/* <PropsDrilling /> 
       <ContextApi /> */}
 
-      {/* React Query */}
-      <ReactQuery />
+      {/* React Query 
+      <ReactQuery /> */}
+
+      {/* React Form Hook */}
+      <ReactForm />
     </div>
   );
 }

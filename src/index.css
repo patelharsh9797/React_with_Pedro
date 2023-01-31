@@ -47,13 +47,16 @@ button,
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
+  color: #ffffff;
   cursor: pointer;
   transition: border-color 0.25s;
   margin: .25rem;
 }
 
 button:hover,
-.btn:hover {
+.btn:hover,
+button:focus-within,
+.btn:focus-within {
   border-color: #646cff;
 }
 
@@ -73,11 +76,16 @@ input {
   outline: none;
   border: 2px solid transparent;
   padding: 0.5em 1em;
-  margin-inline: .5rem;
+  margin: .5rem;
 }
 
 input:focus-within {
-  border-color: #242424;
+  border-color: #000000;
+}
+
+.errorMsg {
+  color: red;
+  display: block;
 }
 
 .addTask {

@@ -39,18 +39,16 @@ const ReactQuery = () => {
 
 // TODO Custom Components
 const Home = () => {
-  const { data, isInitialLoading, isError, refetch, isRefetching } = useQuery(
-    ["CAT"],
-    async () => {
+  const { data, isInitialLoading, isError, error, refetch, isRefetching } =
+    useQuery(["CAT"], async () => {
       return await Axios.get("https://catfact.ninja/fact")
         .then((res) => res.data)
-        .catch((error) => error.response.data);
-    }
-  );
+        .catch((err) => err.response.data);
+    });
 
   // if (isLoading) return <h1>Loading</h1>;
 
-  if (isError) return <h1>Error while Fetching DATA</h1>;
+  if (isError) return <h1>{JSON.stringify(error.message)}</h1>;
 
   return (
     <>
