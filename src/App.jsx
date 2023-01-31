@@ -6,7 +6,8 @@ import styles from "./App.module.css";
 // import PropsDrilling from "./pages/PropsDrilling";
 // import ContextApi from "./pages/ContextApi";
 // import ReactQuery from "./pages/ReactQuery";
-import ReactForm from "./pages/ReactForm";
+// import ReactForm from "./pages/ReactForm";
+import CustomHooks from "./pages/CustomHooks";
 
 // TODO Components
 // import JSX_Comp_Props from "./components/JSX_Comp_Props";
@@ -53,8 +54,11 @@ function App() {
       {/* React Query 
       <ReactQuery /> */}
 
-      {/* React Form Hook */}
-      <ReactForm />
+      {/* React Form Hook 
+      <ReactForm /> */}
+
+      {/* Custom Hook in react */}
+      <CustomHooks />
     </div>
   );
 }
