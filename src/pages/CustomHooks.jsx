@@ -32,7 +32,7 @@ const CustomHooks = () => {
       {/* {isVisible && <h2>Hidden Messages</h2>} */}
       {/* {isVisible2 && <h2>Another Hidden Messages</h2>} */}
 
-      {/* <Cat /> */}
+      <Cat />
 
       <h2>{counter}</h2>
       <button onClick={incrementCounter}>Increment</button>
