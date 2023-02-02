@@ -8,6 +8,7 @@ import styles from "./App.module.css";
 // import ReactQuery from "./pages/ReactQuery";
 // import ReactForm from "./pages/ReactForm";
 import CustomHooks from "./pages/CustomHooks";
+import TypeSafety from "./pages/TypeSafety";
 
 // TODO Components
 // import JSX_Comp_Props from "./components/JSX_Comp_Props";
@@ -57,8 +58,12 @@ function App() {
       {/* React Form Hook 
       <ReactForm /> */}
 
-      {/* Custom Hook in react */}
-      <CustomHooks />
+      {/* Custom Hook in react 
+      
+      <CustomHooks /> */}
+
+      {/* React TypeSafety */}
+      <TypeSafety />
     </div>
   );
 }
